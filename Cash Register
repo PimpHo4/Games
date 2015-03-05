@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	float item1, item2, item3, item4;
+	float salesTax, subTotal;
+	float total2; 
+	int moneyQuestion;
+	
+	cout << "This is the cash register.\n";
+	salesTax = 1.08;
+	cout << "Please enter the amount of the first item:";
+	cin  >> item1;
+	cout << "Please enter the amount of the second item:";
+	cin  >> item2;
+	cout << "Please enter the amount of the third item:";
+	cin  >> item3;
+	cout << "Please enter the amount of the fourth item:";
+	cin  >> item4;
+	
+	subTotal = item1 + item2 + item3 + item4;
+	total2 = subTotal * salesTax;
+	
+	cout << "You owe $" << total2 << endl;
+	cout << "Do you have the money? (Press 1 for yes and 2 for no): ";
+	cin  >> moneyQuestion;
+	if (moneyQuestion == 1) {
+		cout << "Good! Have a nice day." << endl;
+	}
+	else {
+		cout << "I'm calling the cops on you.." << endl;
+	}
+	
+	return(0);
+}
