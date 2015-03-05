@@ -1,0 +1,28 @@
+//Random number guessing program
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+using namespace std;
+
+int main() {
+	int someNumber, v1;
+	
+	cout << "this game generates random numbers 1 to 99..\n";
+	cout << "please try to guess the number: ";
+	cin  >> someNumber;
+	
+	srand(time(NULL));
+	v1 = rand() % 100;
+	cout << "The number is " << v1 << "." << endl;
+	
+	if (someNumber == v1)
+	{
+		cout << "You got it!" << endl;
+	}
+	else
+	{
+		cout << "Sorry\n";
+	}
+	
+	return(0);
+}
