@@ -1,4 +1,5 @@
 //Random number guessing program
+//Written in C++
 #include <iostream>
 #include <cstdlib>
 #include <time.h>
