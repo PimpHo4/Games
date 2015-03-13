@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	//temperature converter
+	float TempF, result;
+	float TempC;
+	
+	cout << "This is a game that converts fahrenheit to celsius." << endl;
+	cout << "Please enter the temperature in Fahrenheit: ";
+	cin  >> TempF;
+	
+	if (TempF < 60.0) {
+		cout << "Damn it's cold. \n";
+		}
+	else if (TempF > 85.0) {
+		cout << "Damn it's hot. \n";
+		}
+	else {
+		cout << "It's nice outside. \n";
+		}
+		
+	result = (TempF - 32.0) * 0.5556;
+	
+	cout << "It's " << result << " degrees Celsius." << endl;
+	
+	return(0);
+}
